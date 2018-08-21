@@ -1,14 +1,14 @@
 {-# OPTIONS_GHC -fwarn-missing-signatures #-}
 module Chp3Ex where
 
-addBang :: [Char] -> [Char]
+addBang :: String -> String
 addBang str = str ++ "!"
 
 getFifth :: [a] -> a
 getFifth str = str !! 4
 
 dropNine :: [a] -> [a]
-dropNine str = drop 9 str
+dropNine = drop 9
 
 thirdLetter :: [a] -> a
 thirdLetter str = str !! 2
@@ -24,5 +24,9 @@ rvrs str = awesome ++ is ++ curry
     awesome = drop 9 str
 
 main :: IO ()
-main = print $ rvrs "Curry is awesome!"
-
+main = do
+--    print $ str
+    print $ rvrs "Curry is awesome!"
+    print $ rvrs "Some other text"
+    print "end"
+    
