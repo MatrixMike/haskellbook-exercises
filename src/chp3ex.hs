@@ -1,5 +1,5 @@
 {-# OPTIONS_GHC -fwarn-missing-signatures #-}
-module Chp3Ex where
+--module Chp3Ex where
 
 addBang :: String -> String
 addBang str = str ++ "!"
